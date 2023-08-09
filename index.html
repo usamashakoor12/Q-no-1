@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greater than</title>
+</head>
+<body>
+    <h1>This button is used for greater than 6 <br>
+        array=[2,54,3,23,55,7,56,8,34,47,57];</h1>
+    <button onclick="greater()">Click here</button>
+    <h2 id="output"></h2>
+
+<script>
+ var par=document.getElementById("output")
+ function greater(){
+    par.innerHTML="";
+    let array=[2,54,3,23,55,7,56,8,34,47,57];
+    for(let i=0; i<=array.length; i++)
+        if(array[i]>6)
+        {
+par.innerHTML+=array[i] +"<br>";
+        }
+}
+
+</script>
+</body>
+</html>
